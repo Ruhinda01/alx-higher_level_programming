@@ -9,13 +9,13 @@ int check_cycle(listint_t *list)
 	listint_t *snail, *cheetah;
 
 	snail = list;
-	cheetah = list->next;
-	while (snail != cheetah)
+	cheetah = list;
+	while (snail != NULL && cheetah != NULL && cheetah->next != NULL)
 	{
-		if (cheetah == NULL || cheetah->next == NULL)
-			return (0);
 		snail = snail->next;
 		cheetah = cheetah->next->next;
+		if (snail == cheetah)
+			return (1);
 	}
-	return (1);
+	return (0);
 }
