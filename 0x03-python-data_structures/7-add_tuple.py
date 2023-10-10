@@ -9,7 +9,6 @@ def padd(tuple_x):
         return (tuple_x[0], tuple_x[1])
 
 
-
 def add_tuple(tuple_a=(), tuple_b=()):
     tuple_a = padd(tuple_a)
     tuple_b = padd(tuple_b)
