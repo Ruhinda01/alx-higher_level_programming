@@ -3,13 +3,16 @@
 
 
 class Square:
+    """
+    A class representing a Square.
+    """
     def __init__(self, size=0):
         """
         Initialises square with a size
         Args:
             size (int): size of square
         """
-        self.size = size
+        self.__size = size
 
     def area(self):
         """
@@ -22,6 +25,12 @@ class Square:
 
     @property
     def size(self):
+        """
+        Getter for the size attribute.
+
+        Return:
+            the size attribute
+        """
         return self.__size
 
     @size.setter
