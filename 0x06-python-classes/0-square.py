@@ -2,5 +2,5 @@
 
 
 class Square:
-    """This is an empty class."""
+    """An empty class Square."""
     pass
