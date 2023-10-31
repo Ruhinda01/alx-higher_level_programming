@@ -4,7 +4,7 @@ add_integer function that adds 2 intgers
 """
 
 
-def add_integer(a, b=89):
+def add_integer(a, b=98):
     """
     adds two integers (a, b)
     Args:

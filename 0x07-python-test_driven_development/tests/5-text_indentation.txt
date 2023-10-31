@@ -1,0 +1,42 @@
+----------------------------
+5-text_indentation.py
+----------------------------
+
+Using 'text_indentation function'
+----------------------------
+
+# This is a doctest file for the text_indentation function.
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Test printing text with 2 newlines after '.', '?', and ':'
+>>> text_indentation("This is a sentence. This is another sentence? And this is one more: the end.")
+This is a sentence.
+<BLANKLINE>
+This is another sentence?
+<BLANKLINE>
+And this is one more:
+<BLANKLINE>
+the end.
+<BLANKLINE>
+
+# Test passing a regular string (should raise a TypeError)
+>>> text_indentation("Cats play round and round")
+Cats play round and round
+
+# Test passing a non-string (should raise a TypeError)
+>>> text_indentation(42)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+# Test passing string with no space
+>>> text_indentation("Cold.Play")
+Cold.
+<BLANKLINE>
+Play
+
+# Test passing an empty string
+>>> text_indentation("")
+
+

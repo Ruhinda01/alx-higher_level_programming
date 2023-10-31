@@ -1,0 +1,45 @@
+----------------------------
+0-add_integer.py
+----------------------------
+
+Using 'add_integer function'
+----------------------------
+
+# This is a doctest file for the add_integer function
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Test adding two integers
+>>> add_integer(5, 3)
+8
+
+# Test adding an int and a float
+>>> add_integer(5, 3.5)
+8
+
+# Test adding two floats
+>>> add_integer(2.5, 2.5)
+4
+
+# Test adding one negative number
+>>> add_integer(5, -2)
+3
+
+# Test adding two negative numbers
+>>> add_integer(-5, -5)
+-10
+
+# Test adding two intgers where one is default
+>>> add_integer(5)
+103
+
+# Test adding two floats where one is default
+>>> add_integer(5.5)
+103
+
+# Test adding a string and an integer (should raise a TypeError)
+>>> add_integer("6", 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+

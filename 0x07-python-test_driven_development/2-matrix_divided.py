@@ -3,6 +3,15 @@
 
 
 def matrix_divided(matrix, div):
+    """
+    divides a matrix
+    Args:
+        matrix : matrix passes
+        div (int): integer
+    Raises:
+        TypeError: matrix must be a matrix of integers/floats
+        ZeroDivisionError: division by zero
+    """
     if matrix is None:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if not isinstance(matrix, list) or not matrix:
