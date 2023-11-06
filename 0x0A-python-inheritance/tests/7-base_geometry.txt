@@ -1,0 +1,31 @@
+----------------------------
+7-base_geometry.py
+----------------------------
+
+Using the integer_validator function
+-------------------------------------
+
+# This is the doctest file for the class BaseGeometry that then runs the integer_validator function
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+# Test string as value input
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+# Test negative value as value input
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", -8)
+Traceback (most recent call last):
+...
+ValueError: name must be greater than 0
+
+# Test value as 0 as value input
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", 0)
+Traceback (most recent call last):
+...
+ValueError: distance must be greater than 0
