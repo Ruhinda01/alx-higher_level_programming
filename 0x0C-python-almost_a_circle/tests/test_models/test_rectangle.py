@@ -64,7 +64,7 @@ class TestRectangleClass(unittest.TestCase):
 
     def test_str_method(self):
         """Unittest of the __str__ method"""
-        r13 = Rectangle(3, 3)
+        r13 = Rectangle(3, 3, id=12)
         output = r13.__str__()
         self.assertEqual(output, "[Rectangle] (12) 0/0 - 3/3")
         r14 = Rectangle(5, 4, x=2, y=4, id=56)

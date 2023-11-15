@@ -81,9 +81,9 @@ class TestSquareClass(unittest.TestCase):
         """
         Unittest of the __str__ method
         """
-        s10 = Square(3, 3)
+        s10 = Square(3, 3, id=10)
         output = s10.__str__()
-        self.assertEqual(output, "[Square] (9) 3/0 - 3")
+        self.assertEqual(output, "[Square] (10) 3/0 - 3")
 
     def test_to_dictionary_method(self):
         """Unittest testing the t0_dictionary method"""
