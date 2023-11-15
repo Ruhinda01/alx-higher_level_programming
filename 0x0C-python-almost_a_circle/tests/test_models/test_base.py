@@ -20,7 +20,7 @@ class TestBaseClass(unittest.TestCase):
         """unittest Testing to_json_string with list of dictionary"""
         b = Base()
         new_list = [
-                {'id' : 5, 'width' : 10, 'height' : 5}
+                {'id': 5, 'width': 10, 'height': 5}
                 ]
         jd = b.to_json_string(new_list)
         self.assertIsInstance(jd, str)
@@ -34,7 +34,7 @@ class TestBaseClass(unittest.TestCase):
         with open(filename, encoding='utf-8') as f:
             fd = f.read()
         self.assertEqual(fd, "[]")
-    
+
     def test_save_to_file_with_list_of_dictionaries_rect(self):
         """unittest testing save_to_file with Rectangle"""
         r1 = Rectangle(10, 5, 6, 1, 2)
@@ -48,7 +48,7 @@ class TestBaseClass(unittest.TestCase):
             {'id': 2, 'width': 11, 'height': 8, 'x': 5, 'y': 3}
         ]
         self.assertEqual(fd, lstd)
-    
+
     def test_save_to_file_with_list_of_dictionaries_sq(self):
         """unittest testing save_to_file with Square"""
         s1 = Square(4, x=2, y=1, id=2)
@@ -62,7 +62,7 @@ class TestBaseClass(unittest.TestCase):
             {'id': 3, 'size': 8, 'x': 4, 'y': 3}
         ]
         self.assertEqual(fd, lstd)
-    
+
     def test_from_json_string_returns_empty_list(self):
         """unittest testing from_json_string with empty list"""
         b = Base()
@@ -71,7 +71,7 @@ class TestBaseClass(unittest.TestCase):
         json_output = b.from_json_string(json_input)
         self.assertEqual(json_output, [])
         self.assertIsInstance(json_output, list)
-    
+
     def test_from_json_string_returns_list_of_dictionaries(self):
         """unittest testing from_json_string a list of dictionaries"""
         b = Base()
@@ -83,7 +83,7 @@ class TestBaseClass(unittest.TestCase):
         json_output = b.from_json_string(json_input)
         self.assertEqual(json_output, new_list)
         self.assertIsInstance(json_output, list)
-    
+
     def test_create_method_with_rectangle_class(self):
         """unittest testing create method"""
         r1 = Rectangle(3, 5, 1)
@@ -91,7 +91,7 @@ class TestBaseClass(unittest.TestCase):
         r2 = Rectangle.create(**r1_dictionary)
         self.assertFalse(r1 is r2)
         self.assertNotEqual(r1, r2)
-    
+
     def test_create_method_with_square_class(self):
         """unittest testing create method"""
         s1 = Square(9, x=2, y=2, id=6)
@@ -99,7 +99,7 @@ class TestBaseClass(unittest.TestCase):
         s2 = Square.create(**s1_dictionary)
         self.assertFalse(s1 is s2)
         self.assertNotEqual(s1, s2)
-    
+
     def test_load_from_file_method_with_Rectangle(self):
         """unittest testing the load from file method"""
         r1 = Rectangle(10, 7, 2, 8)
@@ -108,7 +108,7 @@ class TestBaseClass(unittest.TestCase):
         Rectangle.save_to_file(list_rectangles_input)
         list_rectangles_output = Rectangle.load_from_file()
         self.assertIsInstance(list_rectangles_output, list)
-    
+
     def test_load_from_file_method_with_Square(self):
         """unittest testing the load from file method"""
         r1 = Square(10, 7, 2, 8)
