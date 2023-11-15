@@ -39,10 +39,12 @@ class Base:
         Args:
             list_objs (list)
         """
+        list_of_dict = []
         json_string = "[]"
         filename = cls.__name__ + ".json"
         if list_objs is not None:
-            list_of_dict = [obj.to_dictionary() for obj in list_objs]
+            for obj in list_objs:
+                list_of_dict.append(obj.to_dictionary())
 
             if list_of_dict:
                 json_string = Base.to_json_string(list_of_dict)
