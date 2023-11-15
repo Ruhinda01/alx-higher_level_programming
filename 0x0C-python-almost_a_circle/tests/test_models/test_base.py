@@ -118,5 +118,6 @@ class TestBaseClass(unittest.TestCase):
         list_square_output = Square.load_from_file()
         self.assertIsInstance(list_square_output, list)
 
+
 if __name__ == '__main__':
     unittest.main()
