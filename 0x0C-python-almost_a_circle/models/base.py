@@ -4,6 +4,11 @@ import json
 
 
 class Base:
+    """
+    Base class
+    Attributes:
+        __nb_objects (int)
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
