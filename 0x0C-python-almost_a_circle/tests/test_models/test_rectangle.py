@@ -51,6 +51,7 @@ class TestRectangleClass(unittest.TestCase):
         r11.display()
         expected_output = "###\n###\n"
         self.assertEqual(sys.stdout.getvalue(), expected_output)
+        sys.stdout = sys.__stdout__
 
     def test_display_method_with_coordinates(self):
         """Unittest of the display method with coordinates"""
@@ -59,6 +60,7 @@ class TestRectangleClass(unittest.TestCase):
         r12.display()
         expected_output = "\n  ###\n  ###\n"
         self.assertEqual(sys.stdout.getvalue(), expected_output)
+        sys.stdout = sys.__stdout__
 
     def test_str_method(self):
         """Unittest of the __str__ method"""
