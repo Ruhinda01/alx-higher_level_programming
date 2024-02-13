@@ -1,0 +1,25 @@
+# 0x12. JavaScript - Warm up
+
+## Background Context
+JavaScript is used for many things. Here, you will use JavaScript for 2 reasons:
+
+	* Scripting (same as we did with Python)
+	* Web front-end
+For the moment, and for learning all basic concepts of this language, we will do some scripting. After, we will make our AirBnB project dynamic by using Javascript and JQuery.
+
+## Tasks
+
+0. Write a script that prints “JavaScript is amazing”
+1. Write a script that prints 3 lines
+2. Write a script that prints a message depending of the number of arguments passed
+3. Write a script that prints the first argument passed to it
+4. Write a script that prints two arguments passed to it, in the following format: “ is ”
+5. Write a script that prints My number: <first argument converted in integer> if the first argument can be converted to an integer
+6. Write a script that prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
+7. Write a script that prints x times “C is fun”
+8. Write a script that prints a square
+9. Write a script that prints the addition of 2 integers
+10. Write a script that computes and prints a factorial
+11. Write a script that searches the second biggest integer in the list of arguments.
+12. Update this script to replace the value 12 with 89:
+13. Write a function that returns the addition of 2 integers.
