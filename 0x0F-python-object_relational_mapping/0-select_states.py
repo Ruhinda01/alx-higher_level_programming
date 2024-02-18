@@ -1,4 +1,8 @@
-""" Lists all states from the database hbtn_0e_0_usa """
+""" Lists all states from the database hbtn_0e_0_usa
+    Script displays states in database by ascending id order
+    Script should connect to a MySQL server
+    Results must be sorted in ascending order by states.id
+"""
 
 if __name__ == '__main__':
     import MySQLdb
