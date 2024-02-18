@@ -17,12 +17,11 @@ if __name__ == '__main__':
             )
     cur = conn.cursor()
     query = """SELECT * FROM states
-            WHERE states.name = %s
+            WHERE states.name = '{}'
             ORDER BY states.id ASC"""
-    cur.execute(query, (sys.argv[4],))
+    cur.execute(query.format(sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
-        if row[1] == sys.argv[4]:
-            print(row)
+        print(row)
     cur.close()
     conn.close()
