@@ -10,6 +10,8 @@ if __name__ == "__main__":
     import sys
     import requests
 
-    payload = {'email': sys.argv[2]}
-    r = requests.post(sys.argv[1], params=payload)
+    payload = {"email": sys.argv[2]}
+    url = sys.argv[1]
+
+    r = requests.post(url, data=payload)
     print(r.text)
