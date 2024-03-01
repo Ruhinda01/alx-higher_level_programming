@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+""""Peak finding algorithm"""
+
 
 def find_peak(list_of_integers):
     """
     Finds a peak
     Args:
-        list_of_integers (list)
+        list_of_integers (list): list of ints
     Return:
         peak (int)
     """
