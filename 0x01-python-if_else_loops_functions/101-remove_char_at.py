@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Function that creates a copy of that create a copy
 of the string, removing character at position n
